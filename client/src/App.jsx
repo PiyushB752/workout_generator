@@ -31,7 +31,7 @@ export default function App() {
     }
 
     try{
-      const res = await axios.post("http://localhost:5000/api/workout/generate",data)
+      const res = await axios.post("https://workout-generator-gnhv.onrender.com//api/workout/generate",data)
       setPlanData(res.data)
     } catch(error){
       console.error(error)
